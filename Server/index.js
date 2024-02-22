@@ -19,7 +19,7 @@ app.use(cors({credentials: true,origin:'http://localhost:3000'}));
 
 app.use(cors(
     {
-        origin: ["https://blog-project-five-rho.vercel.app/"],
+        origin: [""],
         methods;["POST","GET"],
         credentials: true
 }
