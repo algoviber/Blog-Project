@@ -8,7 +8,7 @@ export default function Postpage(){
     const{userInfo} = useContext(UserContext);
     const {id}=useParams();
     useEffect(()=>{
-        fetch(`https://blog-project-five-rho.vercel.app/${id}`)
+        fetch(`http://localhost:4000/${id}`)
         .then(response=>{
             response.json().then(postInfo=>{
                 setpostInfo(postInfo);
@@ -31,7 +31,7 @@ export default function Postpage(){
         )}
         <h1>{postInfo.title}</h1>
         <div className="image">
-            <img src={`https://blog-project-five-rho.vercel.app/${postInfo.cover}`} alt="" />
+            <img src={`http://localhost:4000/${postInfo.cover}`} alt="" />
         </div>
         <time>{formatISO9075(new Date(postInfo.createdAt))}</time>
         <div className="author">By: @{postInfo.author.username}</div>
