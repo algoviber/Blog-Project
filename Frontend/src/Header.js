@@ -5,7 +5,7 @@ export default function Header(){
   
   const {setUserInfo,userInfo}= useContext(UserContext);
   useEffect(() => {
-    fetch('https://blog-api-back.vercel.app/profile',{
+    fetch('https://api-psi-rouge.vercel.app/profile',{
       credentials: 'include',
 
     }).then(response=>{
@@ -16,7 +16,7 @@ export default function Header(){
   },[]);
 
   function logout(){
-    fetch('https://blog-api-back.vercel.app/logout',{
+    fetch('https://api-psi-rouge.vercel.app/logout',{
       credentials: 'include',
       method: 'POST',
     });
