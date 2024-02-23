@@ -13,7 +13,7 @@ export default function EditPost(){
     const[files,setFiles] = useState('');
     const[redirect,setRedirect]=useState(false);
     useEffect(()=>{
-        fetch('https://blog-api-back.vercel.app/'+id)
+        fetch('https://api-psi-rouge.vercel.app/'+id)
             .then(response=>{
                 response.json().then(postInfo=>{
                     setTitle(postInfo.title);
@@ -31,7 +31,7 @@ export default function EditPost(){
         data.set('content',content);
         data.set('file',files?.[0]);
         data.set('id',id);
-        const response = await fetch('https://blog-api-back.vercel.app/post',{
+        const response = await fetch('https://api-psi-rouge.vercel.app/post',{
            method: 'PUT',
             body: data,
             credentials: 'include',
