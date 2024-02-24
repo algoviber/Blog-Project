@@ -8,7 +8,7 @@ export default function Postpage(){
     const{userInfo} = useContext(UserContext);
     const {id}=useParams();
     useEffect(()=>{
-        fetch(`https://api-psi-rouge.vercel.app/${id}`)
+        fetch(`https://api-drab-two.vercel.app/${id}`)
         .then(response=>{
             response.json().then(postInfo=>{
                 setpostInfo(postInfo);
@@ -31,7 +31,7 @@ export default function Postpage(){
         )}
         <h1>{postInfo.title}</h1>
         <div className="image">
-            <img src={`https://api-psi-rouge.vercel.app/${postInfo.cover}`} alt="" />
+            <img src={`https://api-drab-two.vercel.app/${postInfo.cover}`} alt="" />
         </div>
         <time>{formatISO9075(new Date(postInfo.createdAt))}</time>
         <div className="author">By: @{postInfo.author.username}</div>
