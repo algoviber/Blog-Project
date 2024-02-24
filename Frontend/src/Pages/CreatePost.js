@@ -20,7 +20,7 @@ export default function CreatePost(){
 
         ev.preventDefault();
         
-        const response = await fetch('https://api-drab-two.vercel.app/post',{
+        const response = await fetch('https://api-alpha-orcin-41.vercel.app/post',{
            method: 'POST',
             body: data,
             credentials: 'include',
