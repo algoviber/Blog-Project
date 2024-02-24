@@ -6,7 +6,7 @@ export default function Post({_id,title,summary,cover,content,createdAt,author})
         <div className="post">
         <div className="image">
         <Link to={`/post/${_id}`}>
-          <img src={'https://api-drab-two.vercel.app/'+cover} alt="" />
+          <img src={'https://api-alpha-orcin-41.vercel.app/'+cover} alt="" />
         </Link>
         </div>
 
