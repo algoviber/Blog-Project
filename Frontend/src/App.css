@@ -3,11 +3,11 @@
   
 }
 
-html{
+/* html{
   background-image: url("background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .login-logo, .register-logo, .post-logo, .logout-logo{
   font-weight: 700;
