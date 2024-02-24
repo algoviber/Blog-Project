@@ -15,7 +15,7 @@ const Post = require('./models/Post');
 
 
 
-app.use(cors({credentials: true,origin:'https://blog-project-front-nu.vercel.app/'}));
+app.use(cors({credentials: true,origin:''}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads',express.static(__dirname+'/uploads'));
