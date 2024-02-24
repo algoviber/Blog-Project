@@ -5,7 +5,7 @@ export default function Header(){
   
   const {setUserInfo,userInfo}= useContext(UserContext);
   useEffect(() => {
-    fetch('https://api-alpha-orcin-41.vercel.app/profile',{
+    fetch('https://api-nu-sable-23.vercel.app/profile',{
       credentials: 'include',
 
     }).then(response=>{
@@ -16,7 +16,7 @@ export default function Header(){
   },[]);
 
   function logout(){
-    fetch('https://api-alpha-orcin-41.vercel.app/logout',{
+    fetch('https://api-nu-sable-23.vercel.app/logout',{
       credentials: 'include',
       method: 'POST',
     });
