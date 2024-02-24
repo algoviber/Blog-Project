@@ -31,7 +31,7 @@ export default function EditPost(){
         data.set('content',content);
         data.set('file',files?.[0]);
         data.set('id',id);
-        const response = await fetch('https://api-drab-two.vercel.app/post',{
+        const response = await fetch('https://api-alpha-orcin-41.vercel.app/post',{
            method: 'PUT',
             body: data,
             credentials: 'include',
