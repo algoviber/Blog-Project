@@ -13,7 +13,7 @@ export default function EditPost(){
     const[files,setFiles] = useState('');
     const[redirect,setRedirect]=useState(false);
     useEffect(()=>{
-        fetch('https://api-drab-two.vercel.app/'+id)
+        fetch('https://api-nu-sable-23.vercel.app/'+id)
             .then(response=>{
                 response.json().then(postInfo=>{
                     setTitle(postInfo.title);
