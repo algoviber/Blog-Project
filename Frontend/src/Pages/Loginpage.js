@@ -11,7 +11,7 @@ export default function Loginpage(){
 
     async function login(ev){
         ev.preventDefault();
-        const response = await fetch('https://api-nu-sable-23.vercel.app/login',{
+        const response = await fetch('https://blog-project-y3yj.onrender.com/login',{
             method: 'POST',
             body: JSON.stringify({username,password}),
             headers: {'Content-Type':'application/json'},
