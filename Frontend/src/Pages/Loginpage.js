@@ -37,7 +37,7 @@ export default function Loginpage(){
         <form className="login" onSubmit={login}>
             <h1>Login</h1>
             <div className="form-group">
-            <label htmlFor="username">Usernamessss</label>
+            <label htmlFor="username">Username</label>
             <input type="text"  value={username} onChange={ev => setUsername(ev.target.value)}/>
             </div>
 
