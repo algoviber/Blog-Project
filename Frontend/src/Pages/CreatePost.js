@@ -11,7 +11,7 @@ export default function CreatePost(){
     const[files,setFiles] = useState('');
     const[redirect,setRedirect]=useState(false);
     async function createNewPost(ev){
-
+        let uploadedImageUrl;
         const data = new FormData();
         data.set('title',title);
         data.set('summary',summary);
