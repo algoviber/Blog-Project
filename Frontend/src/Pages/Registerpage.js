@@ -5,7 +5,7 @@ export default function Registerpage(){
     const [password,setPassword]=useState('');
     async function register(ev){
         ev.preventDefault();
-        const response = await fetch('https://api-nu-sable-23.vercel.app/register',{
+        const response = await fetch('https://blog-project-y3yj.onrender.com/register',{
             method: 'POST',
             body: JSON.stringify({username,password}),
             headers: {'Content-Type':'application/json'},
