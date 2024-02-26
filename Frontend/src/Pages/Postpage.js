@@ -8,7 +8,7 @@ export default function Postpage(){
     const{userInfo} = useContext(UserContext);
     const {id}=useParams();
     useEffect(()=>{
-        fetch(`https://api-nu-sable-23.vercel.app/${id}`)
+        fetch(`https://blog-project-y3yj.onrender.com/${id}`)
         .then(response=>{
             response.json().then(postInfo=>{
                 setpostInfo(postInfo);
@@ -31,7 +31,7 @@ export default function Postpage(){
         )}
         <h1>{postInfo.title}</h1>
         <div className="image">
-            <img src={`https://api-nu-sable-23.vercel.app/${postInfo.cover}`} alt="" />
+            <img src={`https://blog-project-y3yj.onrender.com/${postInfo.cover}`} alt="" />
         </div>
         <time>{formatISO9075(new Date(postInfo.createdAt))}</time>
         <div className="author">By: @{postInfo.author.username}</div>
