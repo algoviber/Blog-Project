@@ -20,7 +20,7 @@ export default function CreatePost(){
 
         ev.preventDefault();
         
-        const response = await fetch('https://api-nu-sable-23.vercel.app/post',{
+        const response = await fetch('https://blog-project-y3yj.onrender.com/post',{
            method: 'POST',
             body: data,
             credentials: 'include',
